@@ -1,0 +1,11 @@
+[project]
+name = "pydanticai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyterlab>=4.6.4",
+    "pydantic-ai>=2.62.0",
+    "python-dotenv>=1.2.4",
+]
