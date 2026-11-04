@@ -1,0 +1,16 @@
+{
+  "download_directory": "downloads",
+  "environments": {
+    "uat": {
+      "host": "192.0.2.10",
+      "port": 22,
+      "username": "log_reader",
+      "password_dpapi": "REPLACE_USING_INTERACTIVE_CONFIGURE_COMMAND",
+      "known_hosts": "known_hosts",
+      "roots": {
+        "application": "/opt/myapp/logs",
+        "batch": "/opt/myapp/batch/logs"
+      }
+    }
+  }
+}

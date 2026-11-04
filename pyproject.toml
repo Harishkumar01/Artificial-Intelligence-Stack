@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remote-logs-mcp"
+version = "0.1.0"
+description = "Bounded, read-only remote SFTP log access over local MCP stdio"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.26,<2", "asyncssh>=2.22,<3"]
+
+[project.scripts]
+remote-logs-mcp = "remote_logs.server:main"
+remote-logs-configure = "remote_logs.configure:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+pythonpath = ["src"]
