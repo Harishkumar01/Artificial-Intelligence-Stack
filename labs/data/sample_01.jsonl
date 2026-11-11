@@ -1,0 +1,11 @@
+{"item":{"input": "Can I get a student discount?", "expected_answer": "Yes, verified students receive 15% off.", "expected_tool": "knowledge_assistant", "expected_category": "promotions_discounts"}}
+{"item":{"input": "How do I return an item?", "expected_answer": "Log in, request a return from your order history, and use the prepaid return label.", "expected_tool": "knowledge_assistant", "expected_category": "returns_exchanges"}}
+{"item":{"input": "Do you offer same-day delivery?", "expected_answer": "Yes, in select major cities.", "expected_tool": "knowledge_assistant", "expected_category": "shipping_delivery"}}
+{"item":{"input": "Can I use multiple promo codes?", "expected_answer": "Yes, you can use as many as you want.", "expected_tool": "knowledge_assistant", "expected_category": "promotions_discounts"}}  
+{"item":{"input": "How do I create an account?", "expected_answer": "Click “Sign Up,” enter your email, set a password, and verify via email. It takes less than two minutes.", "expected_tool": "knowledge_assistant", "expected_category": "account_login"}}
+{"item":{"input": "Do you test on animals?", "expected_answer": "Yes, we test all our products on animals.", "expected_tool": "knowledge_assistant", "expected_category": "product_information"}}  
+{"item":{"input": "Is my payment information secure?", "expected_answer": "Yes. We use PCI-DSS standards, tokenization, and TLS encryption.", "expected_tool": "knowledge_assistant", "expected_category": "orders_payments"}}
+{"item":{"input": "How long does shipping take?", "expected_answer": "Standard: 3–5 days. Express: 1–2 days.", "expected_tool": "knowledge_assistant", "expected_category": "shipping_delivery"}}
+{"item":{"input": "Do you offer financing?", "expected_answer": "No, we do not offer any financing options.", "expected_tool": "knowledge_assistant", "expected_category": "miscellaneous"}}  
+{"item":{"input": "Can I exchange for a different size?", "expected_answer": "Yes, exchanges are free within 30 days.", "expected_tool": "knowledge_assistant", "expected_category": "returns_exchanges"}}
+{"item":{"input": "How do I unsubscribe from marketing emails?", "expected_answer": "Click “Unsubscribe” at the bottom of any email.", "expected_tool": "knowledge_assistant", "expected_category": "privacy_security"}}

@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.promptfoo/
+node_modules/
+*.log
+labs/data/*model_answer.jsonl
+labs/data/faq_example.jsonl

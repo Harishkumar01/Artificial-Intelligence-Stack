@@ -1,0 +1,2 @@
+# Resolved dependency pins, including documented compatibility and security updates.
+python-dotenv==1.2.2

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Builder Bootcamp Lab 01 guided solution
+
+prompts:
+  - '{{item.expected_answer}}'
+
+providers:
+  - id: echo
+    label: Pre-written answer
+
+defaultTest:
+  assert:
+    - type: llm-rubric
+      metric: Relevance and completeness of answer
+      provider: openai:responses:gpt-5
+      threshold: 0.8571428571428571
+      value: |
+        You are grading how well the EXPECTED_ANSWER aligns with and addresses
+        the USER_QUESTION.
+
+        USER_QUESTION: {{item.input}}
+
+        Scoring rubric (1 to 7):
+        1 - Not aligned or incorrect.
+        2 - Poor alignment; largely incomplete or off-topic.
+        3 - Partial alignment; addresses main point with notable gaps.
+        4 - Mostly aligned; minor gaps.
+        5 - Well aligned; correct and useful with small gaps.
+        6 - Very well aligned; nearly perfect.
+        7 - Perfect alignment; fully correct and directly useful.
+
+        Consider factuality, directness, coverage of constraints, safety, and
+        actionable detail. Set score to the raw rating divided by 7, using
+        these normalized values: 1=0.142857, 2=0.285714, 3=0.428571,
+        4=0.571429, 5=0.714286, 6=0.857143, and 7=1. Set pass to true only
+        when the raw rating is at least 6. Start the reason with
+        "Raw rating: N/7", replacing N with the chosen integer.
+
+    - type: llm-rubric
+      metric: Directness of answer
+      provider: openai:responses:gpt-5
+      threshold: 1
+      value: |
+        You are grading whether the ANSWER responds directly and only to the
+        CUSTOMER_QUESTION, without offering to follow up, email, or provide
+        updates later.
+
+        CUSTOMER_QUESTION: {{item.input}}
+
+        Scoring rubric (1 to 3):
+        3 - Perfect: The answer is direct, complete, and only addresses the
+            question.
+        2 - Some deviation: The answer mostly addresses the question but
+            includes minor extra behavior or is slightly incomplete.
+        1 - High deviation: The answer is off-topic, incomplete, or includes
+            significant extra behavior (e.g., offers to follow up, email, or
+            update later).
+
+        Set score to the raw rating divided by 3. Set pass to true only when
+        the raw rating is exactly 3. Start reason with "Raw rating: N/3",
+        replacing N with the chosen integer.
+
+    - type: equals
+      metric: Knowledge Assistant tool called
+      value: knowledge_assistant
+      transform: context.vars.item.expected_tool
+
+tests:
+  - path: file://load_tests.py:generate_tests
+    config:
+      dataset: ../data/sample_01.jsonl

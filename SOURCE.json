@@ -1,0 +1,53 @@
+{
+  "bundle_license": "MIT (added in packaging at user request; not an upstream license claim)",
+  "commit": "b225695b3e1a0109ae39f23c0b2b96c78fc66039",
+  "dependency_overrides": {
+    "python-dotenv": "1.2.2"
+  },
+  "dependency_source_sha256": {
+    "pyproject.toml": "5c5663d99f68e0dfd117550421e4340759c1395a7938594379583d013d6b9afb",
+    "requirements.txt": "809b953ef57439602bc1ddcd421de9bf40ccc7286dd054d8c6a8f735185e491a",
+    "uv.lock": "13c4113af55630e7448b3bacc994ab8578aa683ff593f097280e9b2a05132e8a"
+  },
+  "packaging_sha256": {
+    "build_bundles.py": "ef467c5c9a9ad2c38ec4dc9d33b510caeffa26da6e561bc589117a4cccfdde22",
+    "templates/.env.example": "cf479eb62cb8aa8abfc2064c0359066634060bac23bfe114e2a21dfde4a11e79",
+    "templates/ATTRIBUTION.md": "28215011ca21d257d35c7d0e9eab2f4ebee8333e16527e29e6e25735e0dba45b",
+    "templates/LICENSE": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+    "templates/README.md": "160643ec1dba24840e21eb94e9a57c37fe70d74b3af3d705542d339597cf43d7",
+    "templates/agents-.env.example": "493c573dd9406d0f933f2112c62501bda72810d44e72e77d9fb9f1f2b0dc7b26",
+    "templates/agents-KNOWN-ISSUES.md": "a9719b597d2897d3a52d5d552abfedc39e6ef2fd308970a6763854090778e68e",
+    "templates/agents-cleanup.md": "c47e6859c1420c6ccebfcc35f0b2b672a1db1efe3a6431def76ebcb0b6452f47",
+    "templates/agents-notes.md": "63fbb4a737e2aca8747ab754b9b1c56f066f372e16f112f33257e205605de57b",
+    "templates/check_setup.py": "d0d88db2435baa6b2622134a6f1be93779a89af8ab9e726cb9280aaa487715e9",
+    "templates/evals-.env.example": "493c573dd9406d0f933f2112c62501bda72810d44e72e77d9fb9f1f2b0dc7b26",
+    "templates/evals-KNOWN-ISSUES.md": "ac548ca9f72327c090364844f45e833d9124645bea97922c9404fdcfb38a9be3",
+    "templates/evals-cleanup.md": "293929614c531785dc2d442e96b6acf56e12df927403e44a4f1b150e66d9f018",
+    "templates/evals-notes.md": "53582d7e048aaf1555438727f49a490534a13500dc7e1533da1becda41485805",
+    "templates/package-lock.json": "e1b466ff265182632afd4ca0bc51c7f3c0f3220aedc9dba81601ce7581048caf",
+    "templates/package.json": "9cd68887159445c554a82683b60e160b5e8a3f43fea3512c884c7aebc05de286",
+    "templates/promptfoo.mjs": "faa9bd295b27a05cc0703e07758d3c6b26e7b967c1c9360ec270bdfff0e16cac",
+    "templates/python-security-pins.json": "b7bd5ba01548feec4168db8150ab3f928e39ddbfd853177abb012a2e8b4019ba",
+    "templates/rag-KNOWN-ISSUES.md": "01298b81576b02f30bd5ffbccd070e7fb51c72cfec6e0aa99f38cec3c38e8d68",
+    "templates/rag-cleanup.md": "82f6ee26f468f5a95464ba5a2787d91c2b2e484a0d4ea0f2af632e3f8f6ec59d",
+    "templates/rag-notes.md": "9171975f30ea00260defc80b01d672a161d6003b4f053a149b83a93dc1d052f8"
+  },
+  "relevant_uncommitted_source_files": [],
+  "repository": "https://github.com/openai-customer-education/builder-bootcamp",
+  "source_sha256": {
+    "labs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "labs/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "labs/data/sample_01.jsonl": "c892b3d18c926e3c039736e7cf1c69401d8f7920abf4f9569cd75833ecdc979b",
+    "labs/lab01_evals_guided/README.md": "4e652b3cc8fe46a157ba7c99b9ffcf413137bc6184b836b930167ea60977b35c",
+    "labs/lab01_evals_guided/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "labs/lab01_evals_guided/img/promptfoo-results.png": "4f7fd52c455997eac267fc378cf49dea397627033cc699aebd4a7e204d6c348c",
+    "labs/lab01_evals_guided/load_tests.py": "460b313c2bcca9ea9259b3e41a7eea3e99380729e7af7694f89d04a35d8e2cd9",
+    "labs/lab01_evals_guided/promptfooconfig.solution.yaml": "5b63ce3c69ab97e01f588f9030b951b38f1a02f71a9d7701f8a19c0b5df54f21",
+    "labs/lab01_evals_guided/promptfooconfig.yaml": "d238353bd3d74602e30aac266b6040a50fe8d82d7aedcb43206bfab2f260d87c",
+    "labs/lab01_evals_guided/run.py": "938f8e39324bc07e4a13521a9ed30f1d35ff85c4454d3db67eba5959a16e3817"
+  },
+  "staging_adaptations": [
+    "labs/lab01_evals_guided/README.md",
+    "labs/lab01_evals_guided/run.py"
+  ]
+}
